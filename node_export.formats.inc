@@ -27,6 +27,20 @@ function node_export_node_export_format_handlers() {
       '#import_callback' => 'node_export_json_import',
     ),
 
+    'php' => array(
+      '#title' => t('PHP array export'),
+      '#module' => 'node_export',
+      '#file' => drupal_get_path('module', 'node_export') . '/formats/php.inc',
+      '#description' => t(
+        '<a href="!drupal">PHP array export</a> code.',
+        array(
+          '!php' => 'http://php.net/manual/en/function.var-dump.php'
+        )
+      ),
+      '#export_callback' => 'node_export_php_export',
+      '#import_callback' => 'node_export_php_import',
+    ),
+    
     'drupal' => array(
       '#title' => t('Drupal var export'),
       '#module' => 'node_export',
