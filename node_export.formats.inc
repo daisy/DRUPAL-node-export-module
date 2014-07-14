@@ -32,7 +32,7 @@ function node_export_node_export_format_handlers() {
       '#module' => 'node_export',
       '#file' => drupal_get_path('module', 'node_export') . '/formats/php.inc',
       '#description' => t(
-        '<a href="!drupal">PHP array export</a> code.',
+        '<a href="!php">PHP array export</a> code.',
         array(
           '!php' => 'http://php.net/manual/en/function.var-dump.php'
         )
